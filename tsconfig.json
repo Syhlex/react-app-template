@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./build/",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5"
+  }
+}
