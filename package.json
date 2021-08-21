@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ianzh4ng/react-app-template/issues"
   },
-  "homepage": "https://github.com/ianzh4ng/react-app-template#readme"
+  "homepage": "https://github.com/ianzh4ng/react-app-template#readme",
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
 }
