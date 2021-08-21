@@ -1,59 +1,59 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const jsLoadingRules = {
   test: /\.(ts|js)(x?)$/,
   exclude: /node_modules/,
   use: {
-    loader: "babel-loader",
+    loader: 'babel-loader',
   },
 };
 
 const cssLoadingRules = {
   test: /\.mod\.scss|\.css$/,
   use: [
-    "style-loader",
+    'style-loader',
     {
-      loader: "@teamsupercell/typings-for-css-modules-loader",
+      loader: '@teamsupercell/typings-for-css-modules-loader',
       options: {
-        formatter: "prettier",
+        formatter: 'prettier',
       },
     },
     {
-      loader: "css-loader",
+      loader: 'css-loader',
       options: {
         importLoaders: 1,
         modules: {
-          localIdentName: "[local]__[hash:base64:5]",
+          localIdentName: '[local]__[hash:base64:5]',
         },
       },
     },
-    "sass-loader",
+    'sass-loader',
   ],
 };
 
 const imageLoadingRules = {
   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-  type: "asset/resource",
+  type: 'asset/resource',
 };
 
 const fontLoadingRules = {
   test: /\.(woff|woff2|eot|ttf|otf)$/i,
-  type: "asset/resource",
+  type: 'asset/resource',
 };
 
 module.exports = {
-  entry: "./index.tsx",
+  entry: 'src/index.tsx',
   // options related to how webpack emits results
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "build"),
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
   },
   // options for resolving module requests
   resolve: {
     // directories where to look for modules, in order
-    modules: [path.resolve(__dirname), "node_modules"],
-    extensions: [".tsx", ".ts", ".js"],
+    modules: [path.resolve(__dirname), 'node_modules'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   // configuration regarding modules
   module: {
@@ -66,7 +66,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: 'public/index.html',
     }),
   ],
 };
