@@ -5,6 +5,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
+    "clear": "rm -rf build",
     "start": "webpack serve --open --config webpack.dev.js",
     "test": "jest"
   },

@@ -42,7 +42,7 @@ const fontLoadingRules = {
   type: 'asset/resource',
 };
 
-module.exports = {
+const webConfig = {
   entry: 'src/index.tsx',
   // options related to how webpack emits results
   output: {
@@ -70,3 +70,5 @@ module.exports = {
     }),
   ],
 };
+
+module.exports = webConfig;
