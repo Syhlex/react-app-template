@@ -2,25 +2,36 @@
 
 Starter template for React supporting TypeScript, modular Sass, and Jest. Bundled with webpack.
 
-## Setup
+## Getting started
 
-1. Create a repository using this template.
-2. Install dependencies.
-   ```bash
-   yarn install
-   ```
+Install dependencies.
+
+```bash
+yarn install
+```
+
+Setup Git hooks.
+
+```bash
+yarn setup-git-hooks
+```
 
 ## Scripts
 
-- Start the development server.
-  ```
-  yarn start
-  ```
-- Generate a production build.
-  ```
-  yarn build
-  ```
-- Run tests.
-  ```
-  yarn test
-  ```
+Start the development server.
+
+```bash
+yarn start
+```
+
+Generate a production build.
+
+```bash
+yarn build
+```
+
+Run unit tests.
+
+```bash
+yarn test
+```
