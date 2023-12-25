@@ -1,20 +1,22 @@
 # react-app-template
 
-Starter template for React supporting TypeScript, modular Sass, and Jest. Bundled with webpack.
+Starter template for React projects using TypeScript, Sass with CSS modules, Jest, and webpack.
 
-## Getting started
+Built as a personalized, lightweight alternative to Create React App.
 
-Install dependencies.
+## Setup
 
-```bash
-yarn install
-```
+1. Install dependencies.
 
-Setup Git hooks.
+   ```bash
+   yarn install
+   ```
 
-```bash
-yarn setup-git-hooks
-```
+2. Setup Git hooks.
+
+   ```bash
+   yarn setup-git-hooks
+   ```
 
 ## Scripts
 
