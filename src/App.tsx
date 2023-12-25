@@ -1,1 +1,3 @@
-export const App = () => <div>My Application</div>;
+export const App = () => {
+  return <div>My Application</div>;
+};
