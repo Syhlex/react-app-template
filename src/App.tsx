@@ -10,5 +10,5 @@ export const App = () => {
 
 const Content = () => {
   const i18n = useI18n();
-  return <div>{i18n.get('app.myApp')}</div>;
+  return <div>{i18n.get('app.helloWorld')}</div>;
 };

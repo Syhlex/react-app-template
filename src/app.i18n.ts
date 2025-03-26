@@ -1,7 +1,7 @@
 export const appEN = {
-  myApp: 'My Application',
+  helloWorld: 'Hello world',
 };
 
 export const appFR = {
-  myApp: 'Mon Application',
+  helloWorld: 'Bonjour le monde',
 };

@@ -18,7 +18,7 @@ export const I18nProvider = ({ children }: I18nProviderProps) => {
   };
 
   return (
-    <I18nContext.Provider
+    <I18nContext
       value={{
         locale,
         get,
@@ -26,6 +26,6 @@ export const I18nProvider = ({ children }: I18nProviderProps) => {
       }}
     >
       {children}
-    </I18nContext.Provider>
+    </I18nContext>
   );
 };
