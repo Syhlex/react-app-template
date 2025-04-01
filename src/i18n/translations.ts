@@ -1,11 +1,11 @@
-import { appEN, appFR } from 'app.i18n';
 import { Translations } from './i18nService';
+import { homeTranslations } from 'features/home/home.i18n';
 
 export const translations: Translations = {
   en: {
-    app: appEN,
+    home: homeTranslations.en,
   },
   fr: {
-    app: appFR,
+    home: homeTranslations.fr,
   },
 };

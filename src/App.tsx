@@ -1,17 +1,10 @@
-import { I18nProvider, useI18n } from 'i18n';
-import styles from './App.module.scss';
+import { Outlet } from 'react-router-dom';
+import { I18nProvider } from 'i18n';
 
 export const App = () => {
   return (
     <I18nProvider>
-      <Content />
+      <Outlet />
     </I18nProvider>
-  );
-};
-
-const Content = () => {
-  const i18n = useI18n();
-  return (
-    <div className={styles.contentContainer}>{i18n.get('app.helloWorld')}</div>
   );
 };
