@@ -1,5 +1,5 @@
 export default {
-  moduleDirectories: ['node_modules', 'src'],
+  // moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy', // https://jestjs.io/docs/webpack#mocking-css-modules
   },

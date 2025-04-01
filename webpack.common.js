@@ -61,7 +61,7 @@ const webConfig = {
   // options for resolving module requests
   resolve: {
     // directories where to look for modules, in order
-    modules: [path.resolve(__dirname), 'src', 'node_modules'],
+    modules: [path.resolve(__dirname), 'node_modules'],
     extensions: ['.tsx', '.ts', '.js'],
   },
   // configuration regarding modules
@@ -73,6 +73,10 @@ const webConfig = {
       imageLoadingRules,
       fontLoadingRules,
     ],
+  },
+  devServer: {
+    // falls back to index.html when route is not found, allowing client side router to handle URL change
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

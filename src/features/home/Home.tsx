@@ -1,4 +1,4 @@
-import { useI18n } from 'i18n';
+import { useI18n } from '../../i18n';
 import styles from './Home.module.scss';
 
 export const Home = () => {
