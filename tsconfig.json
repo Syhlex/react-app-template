@@ -4,6 +4,7 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "noImplicitAny": true,
+    "rootDir": "./src",
     "outDir": "build",
     "skipLibCheck": true,
     "strict": true
