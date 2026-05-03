@@ -6,7 +6,7 @@ export enum Locale {
   FR = 'fr',
 }
 
-export type Translations = Record<Locale, Record<string, any>>;
+export type Translations = Record<Locale, Record<string, unknown>>;
 
 const get = (locale: Locale, path: string) => {
   const text = lodashGet(translations[locale], path, '');
