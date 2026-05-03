@@ -1,13 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Home } from './Home';
-
-jest.mock('../../i18n', () => ({ useI18n: () => ({ get: () => 'Welcome' }) }));
+import { I18nProvider } from '../../i18n';
 
 describe('App', () => {
   it('should render Welcome', () => {
-    render(<Home />);
-
+    render(
+      <I18nProvider>
+        <Home />
+      </I18nProvider>,
+    );
     expect(screen.getByText('Welcome')).toBeVisible();
   });
 });
