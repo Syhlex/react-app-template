@@ -4,8 +4,6 @@
 
 Starter template for React projects using TypeScript, Sass with CSS modules, Vitest, and Vite.
 
-Built as a personalized, lightweight alternative to Create React App.
-
 ## Scripts
 
 | Command                   | Description                          |
