@@ -5,7 +5,7 @@ import prettierConfig from 'eslint-config-prettier';
 
 export default tseslint.config(
   {
-    ignores: ['build/**', 'node_modules/**'],
+    ignores: ['build/**', 'node_modules/**', 'webpack.*.js'],
   },
   tseslint.configs.recommended,
   {
