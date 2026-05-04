@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
-import { I18nContext } from './I18nContext';
-import { Locale, i18nService } from './i18nService';
+import { I18nContext, Locale } from './I18nContext';
+import { translations } from './translations';
 
 export interface I18nProviderProps {
   children: ReactNode;
@@ -8,10 +8,6 @@ export interface I18nProviderProps {
 
 export const I18nProvider = ({ children }: I18nProviderProps) => {
   const [locale, setLocale] = useState<Locale>(Locale.EN);
-
-  const get = (path: string) => {
-    return i18nService.get(locale, path);
-  };
 
   const changeLocale = (locale: Locale) => {
     setLocale(locale);
@@ -21,7 +17,7 @@ export const I18nProvider = ({ children }: I18nProviderProps) => {
     <I18nContext
       value={{
         locale,
-        get,
+        i18n: translations[locale],
         changeLocale,
       }}
     >
