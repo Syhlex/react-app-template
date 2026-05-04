@@ -5,7 +5,12 @@ import prettierConfig from 'eslint-config-prettier';
 
 export default tseslint.config(
   {
-    ignores: ['build/**', 'node_modules/**', 'webpack.*.js'],
+    ignores: [
+      'build/**',
+      'node_modules/**',
+      'vite.config.ts',
+      '**/*.module.d.scss.ts',
+    ],
   },
   tseslint.configs.recommended,
   {

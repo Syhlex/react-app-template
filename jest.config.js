@@ -1,6 +1,6 @@
 export default {
   moduleNameMapper: {
-    '\\.(css|scss)$': 'identity-obj-proxy', // https://jestjs.io/docs/webpack#mocking-css-modules
+    '\\.(css|scss)$': 'identity-obj-proxy',
   },
   testEnvironment: 'jsdom',
   transformIgnorePatterns: [
