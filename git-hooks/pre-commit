@@ -12,4 +12,7 @@ echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
 # Add back the modified/prettified files to staging
 echo "$FILES" | xargs git add
 
+# Run linter and block commit on errors
+./node_modules/.bin/eslint src || exit 1
+
 exit 0
