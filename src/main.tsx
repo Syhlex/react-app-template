@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { AppContainer } from './AppContainer';
+import { App } from './App';
 import './css/bootstrap';
 
 const rootEl = document.getElementById('root');
@@ -9,4 +9,4 @@ if (!rootEl) {
 }
 
 const root = createRoot(rootEl);
-root.render(<AppContainer />);
+root.render(<App />);
