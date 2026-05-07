@@ -15,4 +15,7 @@ echo "$FILES" | xargs git add
 # Run linter and block commit on errors
 ./node_modules/.bin/eslint src || exit 1
 
+# Run typechecker and block commit on errors
+./node_modules/.bin/tsc --noEmit || exit 1
+
 exit 0
