@@ -15,7 +15,7 @@
     "clear": "npm run clear:build && npm run clear:modules",
     "clear:build": "rm -rf build",
     "clear:modules": "rm -rf node_modules",
-    "setup-git-hooks": "git config core.hooksPath git-hooks"
+    "setup:hooks": "git config core.hooksPath git-hooks"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
