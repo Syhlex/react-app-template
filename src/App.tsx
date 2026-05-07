@@ -4,18 +4,22 @@ import {
   RouteObject,
   RouterProvider,
 } from 'react-router-dom';
-import { Home } from './features/home/Home';
-import { Contact } from './features/contact/Contact';
 import { I18nProvider } from './i18n';
 
 const routesConfig: RouteObject[] = [
   {
     path: '/',
-    element: <Home />,
+    lazy: async () => {
+      const { Home } = await import('./features/home/Home');
+      return { Component: Home };
+    },
   },
   {
     path: '/contact',
-    element: <Contact />,
+    lazy: async () => {
+      const { Contact } = await import('./features/contact/Contact');
+      return { Component: Contact };
+    },
   },
 ];
 
