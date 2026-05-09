@@ -30,6 +30,7 @@ export default tseslint.config(
       ...pluginReact.configs.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
+      curly: ['error', 'all'],
     },
   },
   prettierConfig,
