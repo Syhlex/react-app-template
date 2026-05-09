@@ -26,6 +26,9 @@ export default tseslint.config(
     settings: {
       react: { version: 'detect' },
     },
+  },
+  prettierConfig,
+  {
     rules: {
       ...pluginReact.configs.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
@@ -33,5 +36,4 @@ export default tseslint.config(
       curly: ['error', 'all'],
     },
   },
-  prettierConfig,
 );
