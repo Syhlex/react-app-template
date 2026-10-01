@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import sassDts from 'vite-plugin-sass-dts';
-import path from 'node:path';
 
 export default defineConfig({
   plugins: [react(), sassDts()],
@@ -17,11 +16,6 @@ export default defineConfig({
     modules: {
       localsConvention: 'camelCaseOnly',
       generateScopedName: '[local]__[hash:base64:5]',
-    },
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
     },
   },
   test: {

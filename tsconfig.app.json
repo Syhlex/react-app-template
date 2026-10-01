@@ -16,8 +16,7 @@
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "useDefineForClassFields": true,
-    "allowArbitraryExtensions": true,
-    "paths": { "@/*": ["./src/*"] }
+    "allowArbitraryExtensions": true
   },
   "include": ["src"]
 }
