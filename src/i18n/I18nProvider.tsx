@@ -1,5 +1,6 @@
 import { ReactNode, useState } from 'react';
-import { I18nContext, Locale } from './I18nContext';
+import { I18nContext } from './I18nContext';
+import { Locale } from './Locale';
 import { translations } from './translations';
 
 export interface I18nProviderProps {

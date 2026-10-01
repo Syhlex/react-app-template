@@ -4,7 +4,7 @@ const en = {
 
 const fr = {
   welcome: 'Bienvenue',
-};
+} satisfies typeof en;
 
 export const homeTranslations = {
   en,

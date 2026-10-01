@@ -1,14 +1,10 @@
 import { createContext } from 'react';
-import { translations } from './translations';
-
-export enum Locale {
-  EN = 'en',
-  FR = 'fr',
-}
+import { Locale } from './Locale';
+import { Translations, translations } from './translations';
 
 export interface I18nContextValues {
   locale: Locale;
-  i18n: (typeof translations)[Locale.EN];
+  i18n: Translations;
   changeLocale: (locale: Locale) => void;
 }
 
