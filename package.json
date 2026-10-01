@@ -15,8 +15,8 @@
     "test:watch": "vitest",
     "check": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run build",
     "clear": "npm run clear:build && npm run clear:modules",
-    "clear:build": "rm -rf build",
-    "clear:modules": "rm -rf node_modules",
+    "clear:build": "node -e \"fs.rmSync('build', { recursive: true, force: true, maxRetries: 3 })\"",
+    "clear:modules": "node -e \"fs.rmSync('node_modules', { recursive: true, force: true, maxRetries: 3 })\"",
     "setup:hooks": "git config core.hooksPath git-hooks"
   },
   "dependencies": {
