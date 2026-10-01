@@ -4,7 +4,7 @@ import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 
 export default defineConfig(
-  globalIgnores(['build/**', 'vite.config.ts', '**/*.module.d.scss.ts']),
+  globalIgnores(['build/**', '**/*.module.d.scss.ts']),
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
