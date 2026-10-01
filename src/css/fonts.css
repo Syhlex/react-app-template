@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Geist';
-  src: url('../assets/fonts/GeistVariableVF.woff2')
+  src:
+    url('../assets/fonts/GeistVariableVF.woff2')
       format('woff2 supports variations'),
     url('../assets/fonts/GeistVariableVF.woff2') format('woff2-variations');
   font-weight: 100 1000;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: 'GeistMono';
-  src: url('../assets/fonts/GeistMonoVariableVF.woff2')
+  src:
+    url('../assets/fonts/GeistMonoVariableVF.woff2')
       format('woff2 supports variations'),
     url('../assets/fonts/GeistMonoVariableVF.woff2') format('woff2-variations');
   font-weight: 100 1000;

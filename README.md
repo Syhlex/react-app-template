@@ -6,11 +6,13 @@ Starter template for React projects using TypeScript, Sass with CSS modules, Vit
 
 ## Scripts
 
-| Command               | Description                          |
-| --------------------- | ------------------------------------ |
-| `npm run setup:hooks` | Setup git hooks                      |
-| `npm run dev`         | Start the development server         |
-| `npm run build`       | Build for production                 |
-| `npm test`            | Run tests                            |
-| `npm run lint`        | Lint source files                    |
-| `npm run clear`       | Remove build output and node_modules |
+| Command                | Description                          |
+| ---------------------- | ------------------------------------ |
+| `npm run setup:hooks`  | Setup git hooks                      |
+| `npm run dev`          | Start the development server         |
+| `npm run build`        | Build for production                 |
+| `npm test`             | Run tests                            |
+| `npm run lint`         | Lint source files                    |
+| `npm run format`       | Format files with Prettier           |
+| `npm run format:check` | Check formatting with Prettier       |
+| `npm run clear`        | Remove build output and node_modules |
