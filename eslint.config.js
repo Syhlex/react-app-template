@@ -12,23 +12,17 @@ export default tseslint.config(
     ],
   },
   tseslint.configs.recommended,
+  pluginReact.configs.flat.recommended,
+  pluginReact.configs.flat['jsx-runtime'],
   {
     plugins: {
-      react: pluginReact,
       'react-hooks': pluginReactHooks,
-    },
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: { jsx: true },
-      },
     },
     settings: {
       react: { version: 'detect' },
     },
     rules: {
-      ...pluginReact.configs.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
-      'react/react-in-jsx-scope': 'off',
       curly: ['error', 'all'],
     },
   },
