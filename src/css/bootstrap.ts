@@ -1,3 +1,3 @@
 import 'normalize.css';
 import './fonts.css';
-import './global.module.scss';
+import './global.scss';
