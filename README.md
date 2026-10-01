@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/Syhlex/react-app-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Syhlex/react-app-template/actions/workflows/ci.yml)
 
-Starter template for React projects using TypeScript, Sass with CSS modules, Vitest, and Vite.
+Starter template for React projects using TypeScript, React Router, Sass with CSS modules, Vitest, Vite, and a small built-in i18n setup.
 
 ## Setup
 
